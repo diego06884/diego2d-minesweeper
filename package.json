@@ -1,0 +1,23 @@
+{
+  "name": "diego2d-minesweeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego06884/diego2d-minesweeper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego06884/diego2d-minesweeper/issues"
+  },
+  "homepage": "https://github.com/diego06884/diego2d-minesweeper#readme",
+  "devDependencies": {
+    "eslint": "^4.18.0",
+    "eslint-plugin-react": "^7.6.1"
+  }
+}
