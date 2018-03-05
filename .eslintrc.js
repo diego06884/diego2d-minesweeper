@@ -25,10 +25,10 @@ module.exports = {
             "error",
             "windows"
         ],
-        "no-console": 1,
+        "no-console": "warn",
         "quotes": [
             "error",
-            "double"
+            "single"
         ],
         "semi": [
             "error",
