@@ -21,13 +21,19 @@ const generateBombBoard = (numberOfRows, numberOfColumns, numberOfBombs)=>{
     while (numberOfBombsPlaced <= numberOfBombs) {
         /*The code in your while loop has the potential to place bombs on top of already existing bombs. This will be fixed when you learn about control flow.*/
         let randomRowIndex = Math.floor(Math.random() * numberOfRows);
-        console.log(randomRowIndex);
         let randomColumnIndex = Math.floor(Math.random() * numberOfColumns);
-        gameBoard[randomRowIndex][randomColumnIndex] = 'B';
-        numberOfBombsPlaced++;
+        if (gameBoard[randomRowIndex][randomColumnIndex] !== 'B') {
+            gameBoard[randomRowIndex][randomColumnIndex] = 'B';
+            numberOfBombsPlaced++;
+        }
     }
     return gameBoard;
 };
+
+const getNumberOfNeighborBombs = (bombBoard, rowIndex, columnIndex) => {
+
+}
+
 const printBoard = (board) => {
     console.log(board.map(row => row.join(' | ')).join('\n'));
 };
